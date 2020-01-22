@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -24,6 +26,15 @@ class HomeController extends Controller
     public function index()
     {
         
-        return view('xtarislands.home');
+        $userid = "admin@xtar.islands.mv";
+        $useremail = Auth::user()->email;
+                
+        if($userid == $useremail) {
+
+            return view('xtarislands.home');
+        } else {
+            return view('home');
+
+        }
     }
 }
