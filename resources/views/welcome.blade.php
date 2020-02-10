@@ -7,6 +7,7 @@
         <div class="col">
             <ul>
                 <li>PDF Manager</li>
+                <li>PDF Manager</li>
                 <li>VBA for Outlook</li>
                 <li>VBA for Excel</li>
                 <li>VBA for Word</li>
