@@ -1,0 +1,31 @@
+
+
+ServerName hsaryfm.tech
+
+DocumentRoot /var/www/html/mydar.mv/public
+
+SSLCertificateFile /etc/ssl/hsaryfm_tech.crt
+SSLCertificateKeyFile /etc/ssl/private/hsaryfm_tech.key
+SSLCertificateChainFile /etc/ssl/hsaryfm_tech.ca-bundle
+
+ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html/mydar.mv/public
+
+
+        <Directory /var/www/html/mydar.mv/public/>
+            Options Indexes FollowSymLinks MultiViews
+            AllowOverride All
+            Order allow,deny
+            allow from all
+            Require all granted
+        </Directory>
+
+
+        /etc/apache2/ssl.crt/server-ca.crt
+
+        
+        a2ensite hsaryfm-ssl.conf
+        a2dissite hsaryfm-ssl.conf
+
+        sudo systemctl restart apache2
+        sudo service apache2 restart
