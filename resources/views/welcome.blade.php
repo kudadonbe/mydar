@@ -13,7 +13,7 @@
 	<style>
 		html,
 		body {
-			background-color: black;
+			background-color: #fff;
 			color: #636b6f;
 			font-family: 'Nunito', sans-serif;
 			font-weight: 200;
@@ -63,17 +63,9 @@
 			margin-bottom: 30px;
 		}
 
-		.backimage {
-			background-image: url("/backimg/Cover.JPG");
- 			background-color: #cccccc;
-  			height: 500px;
-  			background-position: center;
-  			background-repeat: no-repeat;
-  			background-size: cover;
-  			position: relative;
-			opacity: 0.2;
-		}
+
 	</style>
+	
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
@@ -82,7 +74,7 @@
 	
 	<div class="flex-center position-ref full-height">
 		
-		@if (Route::has('login'))
+		<!-- @if (Route::has('login'))
 		<div class="top-right links">
 			@auth
 			<a href="{{ url('/home') }}">Home</a>
@@ -94,7 +86,7 @@
 			@endif
 			@endauth
 		</div>
-		@endif
+		@endif -->
 
 		<div class="content">
 			<div class="title m-b-md">
@@ -109,9 +101,7 @@
 			
 		</div>
 	</div>
-	<div class="backimage">
-
-	</div>
+	
 </body>
 
 </html>
