@@ -13,6 +13,7 @@
 	<style>
 		html,
 		body {
+			background-image: url("\backimg\Cover.JPG");
 			background-color: #fff;
 			color: #636b6f;
 			font-family: 'Nunito', sans-serif;
@@ -95,6 +96,10 @@
 				<a href="https://www.instagram.com/hsaryfm/">instagram</a>
 
 
+			</div>
+			<div>
+
+				<img src="" alt="">
 			</div>
 		</div>
 	</div>
