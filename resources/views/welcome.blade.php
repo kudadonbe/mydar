@@ -13,8 +13,7 @@
 	<style>
 		html,
 		body {
-			background-image: url("\backimg\Cover.JPG");
-			background-color: #fff;
+			background-color: black;
 			color: #636b6f;
 			font-family: 'Nunito', sans-serif;
 			font-weight: 200;
@@ -63,21 +62,33 @@
 		.m-b-md {
 			margin-bottom: 30px;
 		}
+
+		.backimage {
+			background-image: url("/backimg/Cover.JPG");
+ 			background-color: #cccccc;
+  			height: 500px;
+  			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+  			position: relative;
+			opacity: 0.2;
+		}
 	</style>
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
 
-<body>
+<body >
+	
 	<div class="flex-center position-ref full-height">
-
+		
 		@if (Route::has('login'))
 		<div class="top-right links">
 			@auth
 			<a href="{{ url('/home') }}">Home</a>
 			@else
 			<a href="{{ route('login') }}">Login</a>
-
+			
 			@if (Route::has('register'))
 			<a href="{{ route('register') }}">Register</a>
 			@endif
@@ -94,14 +105,12 @@
 			<div class="links">
 				<a href="https://www.facebook.com/hsaryfm">facebook</a>
 				<a href="https://www.instagram.com/hsaryfm/">instagram</a>
-
-
 			</div>
-			<div>
-
-				<img src="" alt="">
-			</div>
+			
 		</div>
+	</div>
+	<div class="backimage">
+
 	</div>
 </body>
 
