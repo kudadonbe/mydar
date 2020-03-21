@@ -58,7 +58,6 @@
 			text-decoration: none;
 			text-transform: uppercase;
 		}
-
 		.m-b-md {
 			margin-bottom: 30px;
 		}
@@ -90,7 +89,7 @@
 
 		<div class="content">
 			<div class="title m-b-md">
-				hsaryfm
+				Ali Fazil
 						
 			</div>
 				
